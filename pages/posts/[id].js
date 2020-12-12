@@ -15,7 +15,21 @@ export default function Post({ postData }) {
 				<div className={utilStyles.lightText}>
 					<Date dateString={postData.date} />
 				</div>
+				<img
+					src={postData.cover.sourceUrl}
+					alt={`${postData.title} album cover`}
+					loading="lazy"
+					srcset={postData.cover.srcset}
+					sizes={postData.cover.sizes}
+				/>
 				<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+
+				<h3>Find {postData.title} on</h3>
+				<ul>
+					{ postData.links.map((link) => {
+						return <li><a href={link.link}>{link.service}</a></li>
+					})}
+				</ul>
 			</article>
 		</Layout>
 	)
