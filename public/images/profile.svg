@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110" height="110" version="1.1" viewBox="0 0 29.104 29.104" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <filter id="filter1299" color-interpolation-filters="sRGB">
+   <feFlood flood-color="rgb(0,0,0)" flood-opacity=".67843" result="flood"/>
+   <feComposite in="flood" in2="SourceGraphic" operator="out" result="composite1"/>
+   <feGaussianBlur in="composite1" result="blur" stdDeviation="5.40541"/>
+   <feOffset dx="3" dy="3.59281" result="offset"/>
+   <feComposite in="offset" in2="SourceGraphic" operator="atop" result="composite2"/>
+  </filter>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path transform="scale(.26458)" d="m55 0c-30.376-1.6569e-6 -55 24.624-55 55-1.6569e-6 30.376 24.624 55 55 55s55-24.624 55-55-24.624-55-55-55zm0.11328 20h0.03906c7.6971 0.04153 15.169 2.6192 21.258 7.334 13.563 10.502 17.533 29.275 9.377 44.348-8.1552 15.072-26.035 22.007-42.236 16.381-16.201-5.626-25.955-22.155-23.041-39.047 17.495-0.014058 35.81-0.015625 53.568-0.015625-2.6202-8.3318-10.344-14-19.078-14-5.0568 1.43e-4 -9.9257 1.9158-13.627 5.3613l-10.232-10.994c6.5072-6.0562 15.079-9.4054 23.973-9.3672zm-18.652 42.5c3.056 7.5545 10.39 12.499 18.539 12.5 8.1499 2.12e-4 15.485-4.9448 18.541-12.5z" fill="#fff" fill-rule="evenodd" filter="url(#filter1299)"/>
+</svg>
