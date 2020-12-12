@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Layout from '../../components/layout'
-import Date from '../../components/date'
-import utilStyles from '../../styles/utils.module.css'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import Layout from '../components/layout'
+import Date from '../components/date'
+import utilStyles from '../styles/utils.module.css'
+import { getAllPostIds, getPostData } from '../lib/posts'
 
 export default function Post({ postData }) {
 	return (
@@ -10,17 +10,15 @@ export default function Post({ postData }) {
 			<Head>
 				<title>{postData.title}</title>
 			</Head>
-			<article>
-				<h1 className={utilStyles.headingXL}>{postData.title}</h1>
-				<div className={utilStyles.lightText}>
-					<Date dateString={postData.date} />
-				</div>
+			<h1 className="fullbleed">{postData.title}</h1>
+			<div className="container">
 				<img
 					src={postData.cover.sourceUrl}
 					alt={`${postData.title} album cover`}
 					loading="lazy"
-					srcset={postData.cover.srcset}
+					srcSet={postData.cover.srcset}
 					sizes={postData.cover.sizes}
+					className="responsive"
 				/>
 				<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 
@@ -30,7 +28,7 @@ export default function Post({ postData }) {
 						return <li><a href={link.link}>{link.service}</a></li>
 					})}
 				</ul>
-			</article>
+			</div>
 		</Layout>
 	)
 }
