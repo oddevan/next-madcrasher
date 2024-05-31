@@ -31,7 +31,6 @@ export default function Layout({ children, home }) {
           <h2>Find madcrasher on</h2>
           <div className="centerblock">
             <ul>
-              <li><a href="https://twitter.com/madcrasher"><img src="/img/twitter.svg" alt="Twitter" /></a></li>
               <li><a href="https://www.youtube.com/madcrasher"><img src="/img/youtube.svg" alt="YouTube" /></a></li>
               <li><a href="https://www.facebook.com/madcrasher"><img src="/img/facebook.svg" alt="Facebook" /></a></li>
               <li><a href="https://madcrasher.tumblr.com/"><img src="/img/tumblr.svg" alt="Tumblr" /></a></li>
@@ -41,15 +40,10 @@ export default function Layout({ children, home }) {
             </ul>
           </div>
           
-          <form action="https://gumroad.com/follow_from_embed_form" className="form gumroad-follow-form-embed" method="post">
-            <input name="seller_id" type="hidden" value="7262063972674" />
-            <input name="email" placeholder="Your email address" type="email" />
-            <button data-custom-highlight-color="" type="submit">Subscribe</button>
-          </form>
-          
           <p>madcrasher is a project by <a rel="me" href="https://www.oddevan.com/">Evan Hildreth</a> who thanks you for listening.</p>
         </footer>
       </div>
+      <script src="https://tinylytics.app/embed/1Rdzec6zuDoj4dKjQeQo.js" defer></script>
     </>
   )
 }
